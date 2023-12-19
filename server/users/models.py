@@ -99,10 +99,9 @@ def random_filler_callback(sender, instance, *args, **kwargs):
 
 @receiver(pre_save, sender=User)
 def create_team_fresh_user_callback(sender, instance, *args, **kwargs):
-    if instance.team is None:
-        team = Team()
-        team.name = "Team 1"
-        team.save()
-        instance.team = team
+    team = Team()
+    team.name = "Team 1"
+    team.save()
+    instance.team = team
     if instance.signed_up_ip is None:
         instance.signed_up_ip = '1.2.3.4'
