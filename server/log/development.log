@@ -1,0 +1,546 @@
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:48:19 +0530
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+Zeitwerk::NameError - expected file /Users/anurag/Desktop/rails-template/app/controllers/api/auth/authentication_controller.rb to define constant Api::Auth::AuthenticationController, but didn't:
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:48:57 +0530
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27021 initializing.
+MONGODB | Server localhost:27022 initializing.
+MONGODB | Server localhost:27023 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27021,localhost:27022,localhost:27023] servers=[#<Server address=localhost:27021 UNKNOWN>,#<Server address=localhost:27022 UNKNOWN>,#<Server address=localhost:27023 UNKNOWN>]>
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server localhost:27021 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for localhost:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27021 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server localhost:27022 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for localhost:27022 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27022 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 30518ms (ActiveRecord: 0.0ms | MongoDB: 0.0ms | Allocations: 58792)
+
+
+
+Mongo::Error::NoServerAvailable - No primary_preferred server is available in cluster: #<Cluster topology=Unknown[localhost:27023] servers=[#<Server address=localhost:27023 UNKNOWN>]> with timeout=30, LT=0.015:
+  app/controllers/api/auth/authentication_controller.rb:41:in `sign_up'
+
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Error checking localhost:27023: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27023 (no TLS)) (on localhost:27023)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:50:05 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27021 initializing.
+MONGODB | Server localhost:27022 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27021,localhost:27022] servers=[#<Server address=localhost:27021 UNKNOWN>,#<Server address=localhost:27022 UNKNOWN>]>
+MONGODB | Removing server localhost:27022 because it is a standalone and we have multiple seeds (2)
+MONGODB | Server description for localhost:27022 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27022 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server localhost:27021 because it is a standalone and we have multiple seeds (2)
+MONGODB | Server description for localhost:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27021 connection closed.
+MONGODB | Topology now has no servers - this is likely a misconfiguration of the cluster and/or the application
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 515ms (ActiveRecord: 0.0ms | MongoDB: 0.0ms | Allocations: 40114)
+
+
+
+Mongo::Error::NoServerAvailable - Cluster has no addresses, and therefore will never have a server:
+  app/controllers/api/auth/authentication_controller.rb:41:in `sign_up'
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:51:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27021 initializing.
+MONGODB | Server localhost:27022 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27021,localhost:27022] servers=[#<Server address=localhost:27021 UNKNOWN>,#<Server address=localhost:27022 UNKNOWN>]>
+MONGODB | Removing server localhost:27022 because it is a standalone and we have multiple seeds (2)
+MONGODB | Server description for localhost:27022 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27022 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server localhost:27021 because it is a standalone and we have multiple seeds (2)
+MONGODB | Server description for localhost:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27021 connection closed.
+MONGODB | Topology now has no servers - this is likely a misconfiguration of the cluster and/or the application
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 514ms (ActiveRecord: 0.0ms | MongoDB: 0.0ms | Allocations: 40149)
+
+
+
+Mongo::Error::NoServerAvailable - Cluster has no addresses, and therefore will never have a server:
+  app/controllers/api/auth/authentication_controller.rb:41:in `sign_up'
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:55:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27021 initializing.
+MONGODB | Server localhost:27022 initializing.
+MONGODB | Server localhost:27023 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27021,localhost:27022,localhost:27023] servers=[#<Server address=localhost:27021 UNKNOWN>,#<Server address=localhost:27022 UNKNOWN>,#<Server address=localhost:27023 UNKNOWN>]>
+MONGODB | Removing server localhost:27022 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for localhost:27022 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27022 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server localhost:27021 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for localhost:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27021 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server localhost:27023 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for localhost:27023 changed from 'unknown' to 'standalone'.
+MONGODB | Server localhost:27023 connection closed.
+MONGODB | Topology now has no servers - this is likely a misconfiguration of the cluster and/or the application
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 515ms (ActiveRecord: 0.0ms | MongoDB: 0.0ms | Allocations: 40858)
+
+
+
+Mongo::Error::NoServerAvailable - Cluster has no addresses, and therefore will never have a server:
+  app/controllers/api/auth/authentication_controller.rb:41:in `sign_up'
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:56:03 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27021 initializing.
+MONGODB | Server 127.0.0.1:27022 initializing.
+MONGODB | Server 127.0.0.1:27023 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27021,127.0.0.1:27022,127.0.0.1:27023] servers=[#<Server address=127.0.0.1:27021 UNKNOWN>,#<Server address=127.0.0.1:27022 UNKNOWN>,#<Server address=127.0.0.1:27023 UNKNOWN>]>
+MONGODB | Removing server 127.0.0.1:27022 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for 127.0.0.1:27022 changed from 'unknown' to 'standalone'.
+MONGODB | Server 127.0.0.1:27022 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server 127.0.0.1:27021 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for 127.0.0.1:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Server 127.0.0.1:27021 connection closed.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Removing server 127.0.0.1:27023 because it is a standalone and we have multiple seeds (3)
+MONGODB | Server description for 127.0.0.1:27023 changed from 'unknown' to 'standalone'.
+MONGODB | Server 127.0.0.1:27023 connection closed.
+MONGODB | Topology now has no servers - this is likely a misconfiguration of the cluster and/or the application
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 515ms (ActiveRecord: 0.0ms | MongoDB: 0.0ms | Allocations: 40819)
+
+
+
+Mongo::Error::NoServerAvailable - Cluster has no addresses, and therefore will never have a server:
+  app/controllers/api/auth/authentication_controller.rb:41:in `sign_up'
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 14:59:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27021 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27021] servers=[#<Server address=127.0.0.1:27021 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | 127.0.0.1:27021 req:6 conn:1:1 sconn:21 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"bankmedia"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xf3ad9b87ae334c39...>}}
+MONGODB | 127.0.0.1:27021 req:6 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:7 conn:1:1 sconn:21 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"bankmedia"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xf3ad9b87ae334c39...>}}
+MONGODB | 127.0.0.1:27021 req:7 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:8 conn:1:1 sconn:21 | development.insert | STARTED | {"insert"=>"teams", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65743364bed33b1e3c76f1aa'), "slug"=>"bankmedia", "updated_at"=>2023-12-09 09:29:08.984507 UTC, "created_at"=>2023-12-09 09:29:08.984507 UTC}], "$db"=>"development", "lsid"=>{"i...
+MONGODB | 127.0.0.1:27021 req:8 | development.insert | SUCCEEDED | 0.008s
+MONGODB | 127.0.0.1:27021 req:9 conn:1:1 sconn:21 | development.find | STARTED | {"find"=>"teams", "filter"=>{"_id"=>BSON::ObjectId('65743364bed33b1e3c76f1aa')}, "limit"=>1, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xf3ad9b87ae334c39...>}}
+MONGODB | 127.0.0.1:27021 req:9 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:10 conn:1:1 sconn:21 | development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"anuragsarkar250@gmail.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xf3ad9b87ae334c39...>}}
+MONGODB | 127.0.0.1:27021 req:10 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:11 conn:1:1 sconn:21 | development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65743365bed33b1e3c76f1ab'), "name"=>"anuragsarkar250@gmail.com", "email"=>"anuragsarkar250@gmail.com", "password_digest"=>"$2a$12$APcFbwZGdfWiYdT0Z1UZpu..9mt8mikh5c4d9j17SBdfxh...
+MONGODB | 127.0.0.1:27021 req:11 | development.insert | SUCCEEDED | 0.007s
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 0.0ms | MongoDB: 18.8ms | Allocations: 84912)
+
+
+
+NoMethodError - undefined method `token' for true:TrueClass:
+  app/controllers/api/auth/authentication_controller.rb:49:in `sign_up'
+
+MONGODB | Server description for 127.0.0.1:27021 changed from 'standalone' to 'standalone' [awaited].
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 15:00:49 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"bankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27021 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27021] servers=[#<Server address=127.0.0.1:27021 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | 127.0.0.1:27021 req:6 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"bankmedia"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:6 | development.find | SUCCEEDED | 0.002s
+Completed 400 Bad Request in 21ms (Views: 0.1ms | ActiveRecord: 0.0ms | MongoDB: 1.9ms | Allocations: 41350)
+
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 15:00:55 +0530
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | 127.0.0.1:27021 req:7 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:7 | development.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27021 req:8 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:8 | development.find | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27021 req:9 conn:1:1 sconn:24 | development.insert | STARTED | {"insert"=>"teams", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('657433cfbed33b1fc2cc264f'), "slug"=>"blankmedia", "updated_at"=>2023-12-09 09:30:55.266588 UTC, "created_at"=>2023-12-09 09:30:55.266588 UTC}], "$db"=>"development", "lsid"=>{"...
+MONGODB | 127.0.0.1:27021 req:9 | development.insert | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:10 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"_id"=>BSON::ObjectId('657433cfbed33b1fc2cc264f')}, "limit"=>1, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:10 | development.find | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27021 req:11 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"anuragsarkar250@gmail.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:11 | development.find | SUCCEEDED | 0.002s
+Completed 422 Unprocessable Entity in 881ms (ActiveRecord: 0.0ms | MongoDB: 12.2ms | Allocations: 1014061)
+
+
+
+Mongoid::Errors::Validations - message:
+  Validation of User failed.
+summary:
+  The following errors were found: Email has already been taken
+resolution:
+  Try persisting the document with valid data or remove the validations.:
+  app/controllers/api/auth/authentication_controller.rb:49:in `sign_up'
+
+MONGODB | Server description for 127.0.0.1:27021 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 15:01:21 +0530
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar2501@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia", "authentication"=>{"email"=>"anuragsarkar2501@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | 127.0.0.1:27021 req:15 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:15 | development.find | SUCCEEDED | 0.002s
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | MongoDB: 1.8ms | Allocations: 836)
+
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 15:01:27 +0530
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar2501@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia2", "authentication"=>{"email"=>"anuragsarkar2501@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia2"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | 127.0.0.1:27021 req:16 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia2"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:16 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:17 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia2"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:17 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:18 conn:1:1 sconn:24 | development.insert | STARTED | {"insert"=>"teams", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('657433efbed33b1fc2cc2651'), "slug"=>"blankmedia2", "updated_at"=>2023-12-09 09:31:27.459579 UTC, "created_at"=>2023-12-09 09:31:27.459579 UTC}], "$db"=>"development", "lsid"=>{...
+MONGODB | 127.0.0.1:27021 req:18 | development.insert | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:19 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"_id"=>BSON::ObjectId('657433efbed33b1fc2cc2651')}, "limit"=>1, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:19 | development.find | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27021 req:20 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"anuragsarkar2501@gmail.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:20 | development.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27021 req:21 conn:1:1 sconn:24 | development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('657433efbed33b1fc2cc2652'), "name"=>"anuragsarkar2501@gmail.com", "email"=>"anuragsarkar2501@gmail.com", "password_digest"=>"$2a$12$c5YeJsrKzsAgNwp9zBKVneDv3gHpjDEV/SBMsnbFu77J...
+MONGODB | 127.0.0.1:27021 req:21 | development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 282ms (Views: 0.1ms | ActiveRecord: 0.0ms | MongoDB: 11.0ms | Allocations: 5514)
+
+
+Started POST "/api/auth/sign_up" for ::1 at 2023-12-09 15:03:41 +0530
+Processing by Api::Auth::AuthenticationController#sign_up as */*
+  Parameters: {"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia", "authentication"=>{"email"=>"anuragsarkar250@gmail.com", "password"=>"[FILTERED]", "slug"=>"blankmedia"}}
+API: POST http://localhost:3000/api/auth/sign_up
+MONGODB | 127.0.0.1:27021 req:36 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:36 | development.find | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27021 req:37 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"anuragsarkar250@gmail.com"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:37 | development.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27021 req:38 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"slug"=>"blankmedia"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:38 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:39 conn:1:1 sconn:24 | development.insert | STARTED | {"insert"=>"teams", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65743475bed33b1fc2cc2653'), "slug"=>"blankmedia", "updated_at"=>2023-12-09 09:33:41.869932 UTC, "created_at"=>2023-12-09 09:33:41.869932 UTC}], "$db"=>"development", "lsid"=>{"...
+MONGODB | 127.0.0.1:27021 req:39 | development.insert | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27021 req:40 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"teams", "filter"=>{"_id"=>BSON::ObjectId('65743475bed33b1fc2cc2653')}, "limit"=>1, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:40 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:41 conn:1:1 sconn:24 | development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"anuragsarkar250@gmail.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x23940 type=uuid data=0xb9d4ac8f28c84bd7...>}}
+MONGODB | 127.0.0.1:27021 req:41 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:42 conn:1:1 sconn:24 | development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65743476bed33b1fc2cc2654'), "name"=>"anuragsarkar250@gmail.com", "email"=>"anuragsarkar250@gmail.com", "password_digest"=>"$2a$12$T9y82tfKr9zAU.eeg.ow1eI0EHPpfU2cdRccRnJM11OKkz...
+MONGODB | 127.0.0.1:27021 req:42 | development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 309ms (Views: 0.1ms | ActiveRecord: 0.0ms | MongoDB: 12.0ms | Allocations: 79695)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27021 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27021] servers=[#<Server address=127.0.0.1:27021 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27021 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | 127.0.0.1:27021 req:6 conn:1:1 sconn:29 | development.find | STARTED | {"find"=>"teams", "filter"=>{"_id"=>BSON::ObjectId('65743475bed33b1fc2cc2653')}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x16400 type=uuid data=0x274011abab6744a0...>}}
+MONGODB | 127.0.0.1:27021 req:6 | development.find | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27021 req:7 conn:1:1 sconn:29 | development.find | STARTED | {"find"=>"users", "filter"=>{"team_id"=>BSON::ObjectId('65743475bed33b1fc2cc2653')}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x16400 type=uuid data=0x274011abab6744a0...>}}
+MONGODB | 127.0.0.1:27021 req:7 | development.find | SUCCEEDED | 0.004s
+MONGODB | Server description for 127.0.0.1:27021 changed from 'standalone' to 'standalone' [awaited].
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27021 req:9 conn:1:1 sconn:29 | development.find | STARTED | {"find"=>"teams", "filter"=>{"_id"=>BSON::ObjectId('65743475bed33b1fc2cc2653')}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x16400 type=uuid data=0x274011abab6744a0...>}}
+MONGODB | 127.0.0.1:27021 req:9 | development.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27021 req:10 conn:1:1 sconn:29 | development.find | STARTED | {"find"=>"teams", "filter"=>{"parent_team_id"=>BSON::ObjectId('65743475bed33b1fc2cc2653')}, "$db"=>"development", "lsid"=>{"id"=><BSON::Binary:0x16400 type=uuid data=0x274011abab6744a0...>}}
+MONGODB | 127.0.0.1:27021 req:10 | development.find | SUCCEEDED | 0.001s
+Started POST "/api/auth/sign_out" for ::1 at 2023-12-09 15:06:38 +0530
+Processing by Api::Auth::AuthenticationController#sign_out as */*
+  Parameters: {"token"=>"[FILTERED]", "authentication"=>{"token"=>"[FILTERED]"}}
+API: POST http://localhost:3000/api/auth/sign_out
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | MongoDB: 0.0ms | Allocations: 149)
+
+

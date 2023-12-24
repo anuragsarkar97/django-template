@@ -1,0 +1,90 @@
+services:
+  cache:
+    image: redis:6.0.6
+    container_name: cache-xyz
+    hostname: cache
+    command: [ '--port', '6379' ]
+    ports:
+      - '6379:6379'
+    expose:
+      - '6379:6379'
+    logging:
+      driver: 'local'
+
+  redis-db:
+    image: redis:6.0.6
+    container_name: redis-db-xyz
+    hostname: redis-db-xyz
+    command: [ '--port', '6383' ]
+    ports:
+      - '6383:6383'
+      - '6381:6383'
+    expose:
+      - '6383:6383'
+      - '6383:6381'
+      - '6381:6388'
+      - '6381:6381'
+    logging:
+      driver: 'local'
+
+  redis-commander:
+    container_name: redis-commander-xyz
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:cache-xyz:6379,local:redis-db-xyz:6383
+    ports:
+      - "8081:8081"
+    expose:
+      - "8081:8081"
+
+  mongo0:
+    image: mongo:4.4.18
+    container_name: mongo-xyz
+    hostname: mongo
+    command: [ '--port', '27021', '--storageEngine=wiredTiger', '--dbpath', '/data/db' ]
+    volumes:
+      - 'mongo_data-xyz:/data/db'
+    ports:
+      - '27021:27021'
+    expose:
+      - '27021:27021'
+    logging:
+      driver: 'local'
+    restart: unless-stopped
+
+  mongo2:
+    image: mongo:4.4.18
+    container_name: mongo2-xyz
+    hostname: mongo
+    command: [ '--port', '27022', '--storageEngine=wiredTiger', '--dbpath', '/data/db' ]
+    volumes:
+      - 'mongo_data-xyz2:/data/db'
+    ports:
+      - '27022:27022'
+    expose:
+      - '27022:27022'
+    logging:
+      driver: 'local'
+    restart: unless-stopped
+
+  mongo3:
+    image: mongo:4.4.18
+    container_name: mongo3-xyz
+    hostname: mongo
+    command: [ '--port', '27023', '--storageEngine=wiredTiger', '--dbpath', '/data/db' ]
+    volumes:
+      - 'mongo_data-xyz3:/data/db'
+    ports:
+      - '27023:27023'
+    expose:
+      - '27023:27023'
+    logging:
+      driver: 'local'
+    restart: unless-stopped
+
+volumes:
+  mongo_data-xyz:
+  mongo_data-xyz2:
+  mongo_data-xyz3:
