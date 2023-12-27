@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "server"
+version = "0.1.0"
+description = ""
+authors = ["anurag sarkar <sarkar.anurag@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beanie = "^1.24.0"
+fastapi = {extras = ["all"], version = "^0.108.0"}
+pydantic = "^2.5.3"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+redis = {extras = ["all"], version = "^5.0.1"}
+pyjwt = "^2.8.0"
+asyncio = "^3.4.3"
+pydantic-settings = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
